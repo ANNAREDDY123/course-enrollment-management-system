@@ -77,7 +77,4 @@ routers/
     student_router.py
     enrollment_router.py
 
-services/
 
-screenshots/
-postman/
