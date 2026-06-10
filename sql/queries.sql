@@ -8,7 +8,6 @@ LEFT JOIN enrollments e
 ON c.id = e.course_id
 GROUP BY c.id;
 
-
 -- Courses per student
 
 SELECT
@@ -18,7 +17,6 @@ FROM students s
 LEFT JOIN enrollments e
 ON s.id = e.student_id
 GROUP BY s.id;
-
 
 -- Top enrolled courses
 
@@ -31,13 +29,11 @@ ON c.id = e.course_id
 GROUP BY c.id
 ORDER BY enrollments DESC;
 
-
 -- Active courses
 
 SELECT *
 FROM courses
 WHERE is_active = 1;
-
 
 -- Student Ranking
 
