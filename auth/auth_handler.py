@@ -5,7 +5,6 @@ SECRET_KEY = "course_management_secret"
 
 ALGORITHM = "HS256"
 
-
 def create_access_token(data: dict):
 
     to_encode = data.copy()
@@ -13,11 +12,9 @@ def create_access_token(data: dict):
     expire = datetime.utcnow() + timedelta(hours=2)
 
     to_encode.update(
-        {"exp": expire}
-    )
+        {"exp": expire})
 
     return jwt.encode(
         to_encode,
         SECRET_KEY,
-        algorithm=ALGORITHM
-    )
+        algorithm=ALGORITHM)
