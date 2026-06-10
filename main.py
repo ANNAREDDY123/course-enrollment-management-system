@@ -23,5 +23,4 @@ app.include_router(enrollment_router)
 def home():
     return {
         "message":
-        "Course Enrollment Management System Running"
-    }
+        "Course Enrollment Management System Running"}
